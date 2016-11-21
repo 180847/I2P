@@ -152,3 +152,12 @@ if Answer13=="B":
 else:
     print("You are wrong.Score=",Score)
 
+print("At room temperature, what is the only metal that is in liquid form??""\n""A:Water B:Mercury,C:Lead D:Magnesium")
+Answer15=input("Input Letter")
+Answer15=Answer15.upper()
+if Answer13=="B":
+    print("You are correct!")
+    Score=Score+1
+    print("score=",Score)
+else:
+    print("You are wrong.Score=",Score)

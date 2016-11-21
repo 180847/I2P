@@ -8,7 +8,7 @@ while checker==True:
     print("Welcome",name,"Looks like you are taking this IQ test, have fun!(Calculators are not allowed)")
     Score=0
 
-    print("President Obama is the #_____ president? A :1st B: 26th C:44 D: 47")
+    print("President Obama is the #_____ president? A :He is not a president B: 26th C:44 D: 47")
     Answer1=input("Input Letter")
     Answer1=Answer1.upper()
     if Answer1=="C":
@@ -28,7 +28,7 @@ while checker==True:
     else:
         print("You are wrong.Score=",Score)
 
-    print("When was WW2""\n""A:1900-1911,B:1939-1945,C:1944-1950,D:2012-2014")
+    print("When was WW2""\n""A:1900-1911,B:1939-1945,C:1944-1950,D:WW2 didn't happen yet")
     Answer3=input("Input Letter")
     Answer3=Answer3.upper()
     if Answer3=="B":
@@ -38,7 +38,7 @@ while checker==True:
     else:
         print("You are wrong.Score=",Score)
 
-    print("Where is the capital of Zimbabwe""\n""A:Berlin,B:Abuja,C:Harare,D:Norton")
+    print("Where is the capital of Zimbabwe""\n""A:Zimbabwe is not a Country,B:Abuja,C:Harare,D:Norton")
     Answer4=input("Input Letter")
     Answer4=Answer4.upper()
     if Answer4=="C":
@@ -58,7 +58,7 @@ while checker==True:
     else:
         print("You are wrong.Score=",Score)
 
-    print("When did Hong Kong get returned to China""\n""A:1997,B:1920,C:1954,D:2012")
+    print("When did Hong Kong get returned to China""\n""A:1997,B:1920,C:1954,D:none of the above")
     Answer6=input("Input Letter")
     Answer6=Answer6.upper()
     if Answer6=="A":
@@ -108,7 +108,7 @@ while checker==True:
     else:
         print("You are wrong.We don't bury survivors.Score=",Score)
 
-    print("Who is the creator of Star Wars""\n""A:Walt Disney B:Rick Riordian,C:George Lucas D:JK. Rolling")
+    print("Who is the creator of Star Wars""\n""A:Walt Disney B:Rick Riordan,C:George Lucas D:JK. Rolling")
     Answer11=input("Input Letter")
     Answer11=Answer11.upper()
     if Answer11=="C":
@@ -118,7 +118,7 @@ while checker==True:
     else:
         print("You are wrong.Score=",Score)
 
-    print("x^2=49, what is x^3""\n""A:343 B:97,C:G473 D:689")
+    print("x^2=49, what is x^3""\n""A:343 B:689,C:G473 D:None of the above")
     Answer12=input("Input Letter")
     Answer12=Answer12.upper()
     if Answer12=="A":
@@ -128,7 +128,7 @@ while checker==True:
     else:
         print("You are wrong.Score=",Score)
 
-    print("Who won the 2016 NBA Champions""\n""A:Spurs B:Lakers,C:Warriors D:Cavaliers")
+    print("Who won the 2016 NBA Champions""\n""A:Spurs B:The NBA Finals were cancelled,C:Warriors D:Cavaliers")
     Answer13=input("Input Letter")
     Answer13=Answer13.upper()
     if Answer13=="D":
@@ -153,6 +153,17 @@ while checker==True:
     Answer15=Answer15.upper()
     if Answer15=="B":
         print("You are correct!")
+        Score=Score+1
+        print("score=",Score)
+        print("2 pt question. Name a planet= 1 points, name the 6th planet from the sun=2 points""\n""A:Water B:Mercury,C:Lead D:Magnesium")
+    Answer16=input("Input Letter")
+    Answer16=Answer16.lower()
+    if Answer16=="saturn":
+        print("You are correct!")
+        Score=Score+2
+        print("score=",Score)
+    elif Answer16=="mercury" or Answer16=="mars" or Answer16=="venus"or Answer16=="uranus"or Answer16=="neptune"or Answer16=="earth"or Answer16=="jupiter":
+        print("You named the wrong planet.")
         Score=Score+1
         print("score=",Score)
     else:
