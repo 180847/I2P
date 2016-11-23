@@ -28,7 +28,7 @@ while checker==True:
     else:
         print("You are wrong.Score=",Score)
 
-    print("When was WW2""\n""A:1900-1911,B:1939-1945,C:1944-1950,D:WW2 didn't happen yet")
+    print("When was WW2?""\n""A:1900-1911,B:1939-1945,C:1944-1950,D:WW2 didn't happen yet")
     Answer3=input("Input Letter")
     Answer3=Answer3.upper()
     if Answer3=="B":
@@ -148,7 +148,7 @@ while checker==True:
     else:
         print("You are wrong.Score=",Score)
 
-    print("At room temperature, what is the only metal that is in liquid form??""\n""A:Water B:Mercury,C:Lead D:Magnesium")
+    print("At room temperature, what is the only metal that is in liquid form?""\n""A:Water B:Mercury,C:Lead D:Magnesium")
     Answer15=input("Input Letter")
     Answer15=Answer15.upper()
     if Answer15=="B":
@@ -156,7 +156,7 @@ while checker==True:
         Score=Score+1
         print("score=",Score)
     print("2 pt question. Name a planet= 1 points, name the 6th planet from the sun=2 points")
-    Answer16=input("Input Letter")
+    Answer16=input("Input planet")
     Answer16=Answer16.lower()
     if Answer16=="saturn":
         print("You are correct!")
@@ -166,9 +166,37 @@ while checker==True:
         print("You named the wrong planet.")
         Score=Score+1
         print("score=",Score)
+
+    print("If Logx (1 / 8) = - 3 / 2, then x is equal to:? ""\n""A:4 B:8 C:2 D:none of the above")
+    Answer17=input("Input Letter")
+    Answer17=Answer17.upper()
+    if Answer17=="A":
+        print("You are correct!")
+        Score=Score+1
+        print("score=",Score)
+
+    print("y - 2x ^2 = 8 x + 5?""\n""A:(-5 , -1)  B:(-5 , -5) C:(-1 , -3)  D:(-2 , -3)")
+    Answer18=input("Input Letter")
+    Answer18=Answer18.upper()
+    if Answer18=="B":
+        print("You are correct!")
+        Score=Score+1
+        print("score=",Score)
+
+    print("There are 6 apples, if you take away 4. How many apples do you have?""\n""A:2  B:4 C:6  D:None of the above")
+    Answer19=input("Input Letter")
+    Answer19=Answer19.upper()
+    if Answer19=="B":
+        print("You are correct!")
+        Score=Score+1
+        print("score=",Score)
     else:
         print("You are wrong.Score=",Score)
-    print("Congratulations",name,"your score is",Score)
+# To add question, copy line186-194 and place below, Answer19 should change to the next number in this case Answer20
+# The question should be placed right after the first print, and the multiple choices should be placed after \n
+# The correct answer should be placed after "if Answer#==, remember to keep the ""s
+
+    print("Congratulations",name,"your scored",Score,"out of 20")
     print("Is there another person who is going to take the test?")
     retake=input("Type 'Y' for yes, 'N' for No")
     retake=retake.upper()
