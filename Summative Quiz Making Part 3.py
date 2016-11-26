@@ -175,18 +175,10 @@ while checker==True:
         Score=Score+1
         print("score=",Score)
 
-    print("y - 2x ^2 = 8 x + 5?""\n""A:(-5 , -1)  B:(-5 , -5) C:(-1 , -3)  D:(-2 , -3)")
+    print("There are 6 apples, if you take away 4. How many apples do you have?""\n""A:2  B:4 C:6  D:None of the above")
     Answer18=input("Input Letter")
     Answer18=Answer18.upper()
     if Answer18=="B":
-        print("You are correct!")
-        Score=Score+1
-        print("score=",Score)
-
-    print("There are 6 apples, if you take away 4. How many apples do you have?""\n""A:2  B:4 C:6  D:None of the above")
-    Answer19=input("Input Letter")
-    Answer19=Answer19.upper()
-    if Answer19=="B":
         print("You are correct!")
         Score=Score+1
         print("score=",Score)

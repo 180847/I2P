@@ -30,8 +30,21 @@
 #for i in range(1,12):
     #print(x,'*',i,"=",x*i)
 
-print("1.number of seconds in a month="),(30*24*60*60)
-print("2.number of seconds in a year="),(365*24*60*60)
-print("3.")
-print(49/7)
-print(8**2)
+#print("1.number of seconds in a month="),(30*24*60*60)
+#print("2.number of seconds in a year="),(365*24*60*60)
+#print("3.")
+#print(49/7)
+#print(8**2)
+from random import shuffle
+x = [i for i in range(18)]
+shuffle(x)
+
+print(x)
+a = x[0]+x[1]
+print (a)
+
+with open('dwn.txt') as f:
+    for i in xrange(6):
+        f.next()
+    for line in f:
+        process(line)
