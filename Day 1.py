@@ -35,16 +35,19 @@
 #print("3.")
 #print(49/7)
 #print(8**2)
-from random import shuffle
-x = [i for i in range(18)]
-shuffle(x)
+#from random import shuffle
+#x = [i for i in range(18)]
+#shuffle(x)
 
-print(x)
-a = x[0]+x[1]
-print (a)
+#print(x)
+#a = x[0]+x[1]
+#print (a)
 
-with open('dwn.txt') as f:
-    for i in xrange(6):
-        f.next()
-    for line in f:
-        process(line)
+#file= open("Quiz4")
+#for line in range(7,9):
+#    print(file.readlines())
+
+with open("Quiz4") as f:
+    questions = f.readlines()
+
+print(questions[9])
