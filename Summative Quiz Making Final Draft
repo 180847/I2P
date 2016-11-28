@@ -1,0 +1,62 @@
+import datetime
+date=datetime.date.today()
+from random import shuffle
+x = [i for i in range(17)]
+shuffle(x)# This is to make x to be a number randomly from 1 to 17 without repeating
+counter=0
+RandomVariable1=x[counter]
+
+questions = [line.rstrip('\n') for line in open ("Quiz4")]
+realanswers = [line.rstrip('\n') for line in open ("Quiz4answers")]
+#This is to allow us to extract a line of choice from a text file
+
+name = input("What is your name?")
+print ("Welcome",name,"Looks like you are taking this Knowledge test, have fun!(Calculators are not allowed)")
+Score = 0
+
+questionnumber = 0
+questionsasked = 0
+
+
+while questionsasked >= 0 and questionsasked < 16:
+    #print (RandomVariable1)
+    print(questions[RandomVariable1]) # printing a random line from text file
+
+    answer = input("Input Letter")
+    answer=str(answer)
+    answer=answer.upper()
+
+    correct=realanswers[RandomVariable1] # printing the answer corrosponding to the question
+    correct=str(correct)
+    #print(correct)
+    #print(answer)
+    if correct==answer:
+        Score=Score+1
+        print ("You are correct. Your score is: ", str(Score))
+        questionsasked=questionsasked+1
+        counter=counter+1
+        RandomVariable1=x[counter]
+    else:
+        print ("You were incorrect. The correct answer is:", correct)
+        print ("Your score is: ", str(Score))
+        questionsasked=questionsasked+1
+        counter=counter+1
+        RandomVariable1=x[counter]
+
+print (name, ",", str(Score), "out of 17 was your score, completed on", date)
+file3=open("Highscores", "r+")
+file3.writelines(["\n", str(Score)])
+file3=sorted(file3.readlines())
+scoreslist=[]
+for line in file3:
+    scoreslist.append(line)
+highscore=int(scoreslist[-1])
+if Score > highscore:
+    print ("You have beaten the highscore!")
+else:
+    print ("The highest score is:", str(highscore), "Keep trying and you may get it.")
+file4=open("Highscores2", "a")
+resultline=(name, "got", Score, "on", date)
+resultline=str(resultline)
+print (resultline)
+file4.writelines(resultline)
